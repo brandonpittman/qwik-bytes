@@ -42,7 +42,12 @@ export default component$(() => {
   useStylesScoped$(`
     * + * {
       margin-block-start: 1rem;
-    }`);
+    }
+
+    [data-error] {
+      color: red;
+    }
+    `);
 
   return (
     <div>
@@ -56,7 +61,7 @@ export default component$(() => {
                 <span>Email:</span>
                 <input type="email" value={field.value} {...props} />
               </label>
-              <p>{field.error}</p>
+              <p data-error>{field.error}</p>
             </div>
           )}
         </Field>
@@ -68,7 +73,7 @@ export default component$(() => {
                 <span>Password:</span>
                 <input type="password" value={field.value} {...props} />
               </label>
-              <p>{field.error}</p>
+              <p data-error>{field.error}</p>
             </div>
           )}
         </Field>
