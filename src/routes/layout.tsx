@@ -28,6 +28,7 @@ export default component$(() => {
       <main>
         <Slot />
       </main>
+      <footer>Copyright 2024</footer>
     </>
   );
 });
