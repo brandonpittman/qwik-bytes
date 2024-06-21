@@ -1,4 +1,10 @@
-import { component$, useStyles$, useStylesScoped$ } from "@builder.io/qwik";
+import {
+  Fragment,
+  Slot,
+  component$,
+  useStyles$,
+  useStylesScoped$,
+} from "@builder.io/qwik";
 import { type DocumentHead } from "@builder.io/qwik-city";
 
 import indexStyles from "./index.css?inline";
@@ -12,10 +18,20 @@ export const ScopedChild = component$(() => {
   // useStylesScoped$(`h2 {color: limegreen}`);
   // useStylesScoped$(overrideStyles);
 
+  // useStylesScoped$(`
+  //   #useStylesScoped + :global(code) {
+  //     color: red;
+  //   }
+  //   `);
+
   return (
-    <h2 id="useStylesScoped">
-      <pre>useStylesScoped$</pre>
-    </h2>
+    <Fragment>
+      <h2 id="useStylesScoped">
+        <pre>useStylesScoped$</pre>
+      </h2>
+
+      <Slot />
+    </Fragment>
   );
 });
 
@@ -37,7 +53,9 @@ export default component$(() => {
         <pre>useStyles$</pre>
       </h2>
 
-      <ScopedChild />
+      <ScopedChild>
+        Hello from <code>ScopedChild</code>.
+      </ScopedChild>
     </div>
   );
 });
