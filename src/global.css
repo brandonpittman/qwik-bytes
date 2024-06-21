@@ -14,6 +14,10 @@
   --qwik-dirty-black: #1d2033;
   --qwik-dark-background: #151934;
   --qwik-dark-text: #ffffff;
+  --space-s: 1rem;
+  --space-m: 2rem;
+  --space-l: 5rem;
+  --space-flow: var(--space-s);
 }
 
 html {
