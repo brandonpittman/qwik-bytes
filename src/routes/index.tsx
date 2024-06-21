@@ -9,6 +9,7 @@ import { type DocumentHead } from "@builder.io/qwik-city";
 
 import indexStyles from "./index.css?inline";
 import overrideStyles from "./override.css?inline";
+import { textRed } from "~/utilities.module.css";
 
 // export const useLoader = routeLoader$(({ redirect }) => {
 //   throw redirect(307, "/hello");
@@ -56,6 +57,17 @@ export default component$(() => {
       <ScopedChild>
         Hello from <code>ScopedChild</code>.
       </ScopedChild>
+
+      <h2
+        id="useStyles"
+        class={
+          [
+            // textRed
+          ]
+        }
+      >
+        <pre>CSS Modules</pre>
+      </h2>
     </div>
   );
 });
