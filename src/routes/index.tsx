@@ -11,19 +11,15 @@ import indexStyles from "./index.css?inline";
 import overrideStyles from "./override.css?inline";
 import { textRed } from "~/utilities.module.css";
 
-// export const useLoader = routeLoader$(({ redirect }) => {
-//   throw redirect(307, "/hello");
-// });
-
 export const ScopedChild = component$(() => {
-  // useStylesScoped$(`h2 {color: limegreen}`);
-  // useStylesScoped$(overrideStyles);
+  useStylesScoped$(`h2 {color: limegreen}`);
+  useStylesScoped$(overrideStyles);
 
-  // useStylesScoped$(`
-  //   #useStylesScoped + :global(code) {
-  //     color: red;
-  //   }
-  //   `);
+  useStylesScoped$(`
+    #useStylesScoped + :global(code) {
+      color: red;
+    }
+    `);
 
   return (
     <Fragment>
@@ -37,14 +33,13 @@ export const ScopedChild = component$(() => {
 });
 
 export default component$(() => {
-  // useStyles$(indexStyles);
+  useStyles$(indexStyles);
 
-  // useStyles$(`
-  //   h2 {
-  //     color: rebeccapurple;
-  //     // --space-flow: var(--space-l);
-  //   }
-  //   `);
+  useStyles$(`
+    h2 {
+      color: rebeccapurple;
+    }
+    `);
 
   return (
     <div class="flow">
@@ -58,14 +53,7 @@ export default component$(() => {
         Hello from <code>ScopedChild</code>.
       </ScopedChild>
 
-      <h2
-        id="useStyles"
-        class={
-          [
-            // textRed
-          ]
-        }
-      >
+      <h2 id="useStyles" class={[textRed]}>
         <pre>CSS Modules</pre>
       </h2>
     </div>
