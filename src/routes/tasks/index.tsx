@@ -29,9 +29,12 @@ const VisibleTask = component$(() => {
   const countSig = useSignal(0);
 
   // eslint-disable-next-line
-  useVisibleTask$(() => {
-    console.log("Initial useVisibleTask$");
-  });
+  useVisibleTask$(
+    () => {
+      console.log("Initial useVisibleTask$");
+    },
+    { strategy: "document-ready" }
+  );
 
   // eslint-disable-next-line
   useVisibleTask$(({ track }) => {
@@ -51,7 +54,13 @@ export default component$(() => {
   return (
     <div class="flow" style="--space-flow: 4rem">
       <Task />
-      <VisibleTask />
+      <div
+        style={{
+          marginBlockStart: "100vh",
+        }}
+      >
+        <VisibleTask />
+      </div>
     </div>
   );
 });
