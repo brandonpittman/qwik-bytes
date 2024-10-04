@@ -56,6 +56,8 @@ export default component$(() => {
       <h2 id="useStyles" class={[textRed]}>
         <pre>CSS Modules</pre>
       </h2>
+
+      <a href="/css-imports">CSS Imports</a>
     </div>
   );
 });

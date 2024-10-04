@@ -7,6 +7,8 @@ import {
 import { RouterHead } from "./components/router-head/router-head";
 
 import "./global.css";
+import.meta.glob("./styles/compositions/*.css", { eager: true });
+import.meta.glob("./styles/blocks/*.css", { eager: true });
 
 export default component$(() => {
   /**

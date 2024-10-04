@@ -23,7 +23,6 @@ body {
   background: var(--qwik-dark-background);
   color: var(--qwik-dark-text);
   overflow-x: hidden;
-  padding: 2rem;
 }
 
 /* HEADINGS ------------------------------------- */
@@ -146,6 +145,3 @@ footer {
   padding-block: 1rem;
 }
 
-.flow > * + * {
-  margin-block-start: var(--space-flow, var(--space-s));
-}
