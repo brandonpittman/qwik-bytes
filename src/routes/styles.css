@@ -20,8 +20,8 @@ html {
 }
 
 body {
-  background: var(--qwik-dark-background);
-  color: var(--qwik-dark-text);
+  background: var(--qwik-light-background);
+  color: var(--qwik-light-purple);
   overflow-x: hidden;
 }
 
@@ -29,7 +29,6 @@ body {
 h1,
 h2,
 h3 {
-  color: white;
   margin: 0;
 }
 
@@ -144,4 +143,3 @@ footer {
   text-align: center;
   padding-block: 1rem;
 }
-

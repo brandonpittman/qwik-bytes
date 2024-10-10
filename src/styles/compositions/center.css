@@ -1,0 +1,19 @@
+/* CENTER
+center from Every Layout
+More info: https://every-layout.dev/layouts/center/
+
+CUSTOM PROPERTIES AND CONFIGURATION
+--measure */
+
+.center {
+  box-sizing: content-box;
+  margin-inline: auto;
+  max-inline-size: var(--measure, 65ch);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.center[data-align] {
+  text-align: center;
+}
