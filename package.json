@@ -53,6 +53,7 @@
   "dependencies": {
     "@modular-forms/qwik": "^0.23.1",
     "motion": "^10.18.0",
+    "qwik-transition": "^0.0.7",
     "typed-css-modules": "^0.9.1",
     "valibot": "^0.25.0"
   }
