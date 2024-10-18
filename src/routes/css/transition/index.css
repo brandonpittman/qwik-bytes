@@ -1,0 +1,22 @@
+.appear {
+  opacity: 1;
+  scale: 1;
+  transition:
+    opacity 0.5s ease-out,
+    scale 0.5s ease-out,
+    display 0.5s ease-out;
+  transition-behavior: allow-discrete;
+
+  @starting-style {
+    opacity: 0;
+    scale: 1.1;
+  }
+
+  &[hidden] {
+    opacity: 0;
+    scale: 0.9;
+    display: none !important;
+    transition-duration: 0.4s;
+    transition-timing-function: ease-in;
+  }
+}

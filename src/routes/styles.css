@@ -21,7 +21,7 @@ html {
 
 body {
   background: var(--qwik-light-background);
-  color: var(--qwik-light-purple);
+  color: var(--color-dark);
   overflow-x: hidden;
 }
 
@@ -108,14 +108,14 @@ ul {
 
 /* BUTTONS -------------------------------------- */
 a.button,
-button {
+button.button {
   background: var(--qwik-light-blue);
   border: none;
-  border-radius: 8px;
+  border-radius: 4px;
   color: white;
   cursor: pointer;
   font-size: 0.8rem;
-  padding: 15px 20px;
+  padding: 0.5rem 0.125rem;
   text-align: center;
 }
 
@@ -142,4 +142,8 @@ main {
 footer {
   text-align: center;
   padding-block: 1rem;
+}
+
+[hidden] {
+  display: none !important;
 }
