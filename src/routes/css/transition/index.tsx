@@ -28,7 +28,7 @@ export default component$(() => {
 
   return (
     <form preventdefault:submit class="wrapper flow">
-      <h1 class="appear">Disappearing Todos</h1>
+      <h1 class="appear">Transition</h1>
       <div
         class="cluster w-full"
         style="--cluster-horizontal-alignment: center"

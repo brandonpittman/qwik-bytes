@@ -32,6 +32,7 @@
     "@emotion/styled": "^11.11.0",
     "@mui/material": "^5.13.0",
     "@mui/x-data-grid": "^6.4.0",
+    "@qwik-ui/headless": "^0.6.2",
     "@types/eslint": "^8.44.8",
     "@types/node": "^20.10.3",
     "@types/react": "^18.2.28",
@@ -54,6 +55,7 @@
     "@modular-forms/qwik": "^0.23.1",
     "motion": "^10.18.0",
     "qwik-transition": "^0.0.7",
+    "swiped-events": "^1.2.0",
     "typed-css-modules": "^0.9.1",
     "valibot": "^0.25.0"
   }

@@ -1,0 +1,3 @@
+.region {
+  margin-block: var(--region-space, 10rem);
+}

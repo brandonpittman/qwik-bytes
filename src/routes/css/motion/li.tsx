@@ -11,7 +11,10 @@ export const ListItem = component$<{
   // eslint-disable-next-line
   useVisibleTask$(() => {
     if (ref.value) {
-      animate(ref.value, { opacity: [0, 1], x: [-8, 0] }, { duration });
+      animate(ref.value, {
+        opacity: [0, 1],
+        x: [-8, 0]
+      }, { duration });
     }
   });
 
