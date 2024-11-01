@@ -52,16 +52,20 @@ export default component$(() => {
         <Modal.Description>
           Swipe left and right to view photos.
         </Modal.Description>
-        <div>
-          <img
-            ref={imgRef}
-            style={{ objectFit: "contain" }}
-            src={images[selected.value]}
-            alt=""
-            width={640}
-            height={480}
-          />
-        </div>
+        <ul role="list" ref={imgRef} style={{ listStyle: "none" }}>
+          {images.map((image, index) => (
+            <li key={image}>
+              <img
+                hidden={index !== selected.value}
+                style={{ objectFit: "contain" }}
+                src={images[index]}
+                alt=""
+                width={640}
+                height={480}
+              />
+            </li>
+          ))}
+        </ul>
         <footer class="cluster" style="--cluster-horizontal-alignment: center">
           <button
             disabled={selected.value == 0}
