@@ -67,7 +67,7 @@ code {
 
 ul {
   margin: 0;
-  padding-left: 20px;
+  padding: 0;
 }
 
 /* CONTAINER ------------------------------------ */
@@ -146,4 +146,9 @@ footer {
 
 [hidden] {
   display: none !important;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
